@@ -1,0 +1,24 @@
+{% extends "main/_base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+        <div class="d-flex justify-content-center">
+            <div class="panel mb-5 mt-5">
+                <div id='editprofile_heading' class="panel-heading text-center mb-2">Edit Profile</div>
+                <div class="panel-body">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+
+                        <a class="nav-link text-center"><button type="submit" class="btn btn-secondary">UPDATE</button></a> 
+                    </form>
+                        <a class="nav-link text-center" href="{% url 'accounts:profile' %}"><button type="submit" class="btn btn-secondary">CANCEL</button></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

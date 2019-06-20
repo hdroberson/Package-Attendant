@@ -1,0 +1,90 @@
+{% extends "main/_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--Action Cards-->
+
+<div id='about_heading' class="header text-center mt-5">
+    <h1>How It Works</h1>
+</div>
+
+<div id='cardgroup_about' class="card-group m-5">
+  <div class="card border-0 mt-5">
+    <img class="card-img-top responsive" src="{% static 'main/stolen_boxes.jpg' %}" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Theft of Packages</h4>
+      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi non placeat veritatis laudantium totam quidem aspernatur eos perferendis cum, recusandae esse incidunt, est tempore. Ea magnam quis minima cum ipsum.</p>
+    </div>
+  </div>
+  <div class="card border-0">
+    <img class="card-img-top responsive" src="{% static 'main/doorstep_boxes.jpg' %}" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Not Home To Recieve Packages</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eveniet, tempore eligendi dignissimos voluptatem voluptates repellat nostrum quasi consectetur optio facere corporis numquam aliquam? Nulla perspiciatis consectetur enim 
+    </div>
+  </div>
+  <div class="card border-0 mt-5">
+    <img class="card-img-top responsive" src="{% static 'main/returned_boxes.jpg' %}" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">Undelivered Packages</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veniam exercitationem nesciunt iste quam in maxime dolor fugiat itaque, aliquam facere dolores fuga optio non illum ullam soluta possimus eligendi!</p>
+    </div>
+  </div>
+</div>
+
+
+<!--Footer-->
+
+<div class="section mt-5 p-3 bg-success mb-n2">
+  <div class="row">
+    <div class="map-responsive col-md-4 pt-3">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-4">
+      <p><h4 class="text-light">Lorem ipsum dolor</h4></p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In fugit dolores obcaecati vero quae esse quo labore pariatur quia expedita, placeat unde doloribus suscipit delectus id soluta optio sit corrupti.</p>
+    </div>
+
+    <div class="col-md-4">
+      <form>
+        <p><h4 class="text-light">We Would Love to Hear From You!</h4></p>
+        <div class="form-group">
+          <label for="formGroupExampleInput">First Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Last Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Your Message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-light text-success">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

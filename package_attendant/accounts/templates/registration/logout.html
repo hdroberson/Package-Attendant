@@ -1,0 +1,16 @@
+{% extends "main/_base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class="header text-center mt-5 mb-5">
+        <h2>You are now logged out</h2>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                <a class='ml-2' href="{% url 'accounts:login' %}">Log Back In</a>
+            </small>
+        </div>
+    </div>
+
+
+{% endblock content %}

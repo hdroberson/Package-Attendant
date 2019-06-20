@@ -1,0 +1,42 @@
+{% extends "main/_base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+                
+                <div id="profile_heading">
+                <h2 class="header text-center mt-5">{{ user.username }}'s Profile Page</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 ml-5">
+                            <img src="https://placeimg.com/300/240/people"width='240' class="img-thumbnail" alt="Profile image">
+                            <!--
+                            <img src="{{ user.userprofile.image.url }}" width='240' class="rounded" alt="Profile image">
+                            -->
+                            &nbsp;{{ user.first_name }}&nbsp;{{ user.last_name }}
+                    </div>
+                </div>
+                <form action="." method="POST" class="padding">
+                    <div class="row d-flex justify-content-around mt-3 mb-5 bg-success">
+                    <div class="col-md-6 pl-5 pt-5 pb-5">
+                        <p>Username: {{ user }}</p>
+                        <p>First Name: {{ user.userprofile.first_name }}</p>
+                        <p>Last Name: {{ user.userprofile.last_name }}</p>
+                        <p>Email: {{ user.userprofile.email }}</p>
+                    </div> 
+                    <div class="col-md-6 pl-5 pt-5 pb-5">  
+                        <p>Address: {{ user.userprofile.address_1 }}</p>
+                        <p class="tab">{{ user.userprofile.address_2 }}</p>
+                        <p>City: {{ user.userprofile.city }}</p> 
+                        <p>State: {{ user.userprofile.state }}</p> 
+                        <p>Zip Code: {{ user.userprofile.zip_code }}</p>  
+                    </div> 
+                </div>              
+                </form>
+                    <a class="nav-link text-center" href="{% url 'accounts:edit_profile' %}"><button type="submit" class="btn btn-secondary">EDIT PROFILE</button></a> 
+                <br>
+    
+
+{% endblock content %}

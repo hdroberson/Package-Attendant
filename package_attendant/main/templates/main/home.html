@@ -1,0 +1,101 @@
+{% extends "main/_base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron-->
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-6 pl-3">
+            <img class='img-fluid' src="https://placeimg.com/600/300/people" alt="jumbotron-image">
+        </div>
+        <div class="col-md-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis explicabo corrupti iure officiis sequi reprehenderit quae fugit molestiae tempore? Quo esse, est voluptatibus possimus alias illum! Rem ullam architecto qui.</p>
+            <a class="nav-link" href="{% url 'accounts:register' %}"><button type="submit" class="btn btn-success">FREE 30 DAY TRIAL</button></a>
+        </div>
+    </div>
+</div>
+<!--Action Cards-->
+<div class="card-group m-5 mt-n5">
+    <div class="card m-1 bg-success">
+      <div class="card-body text-center">
+        <h2><p class="card-title homecard">Send</p></h2>
+        <img class="card-img-bottom rounded-circle" src="{% static 'main/send.jpg' %}" alt="Card image">
+      </div>
+    </div>
+    <div class="card m-1 bg-success">
+      <div class="card-body text-center">
+        <h2><p class="card-title homecard">Confirm</p></h2>
+        <img class="card-img-bottom rounded-circle" src="{% static 'main/pickup.jpg' %}" alt="Card image">
+      </div>
+    </div>
+    <div class="card m-1 bg-success">
+      <div class="card-body text-center">
+        <h2><p class="card-title homecard">Pickup</p></h2>
+        <img class="card-img-bottom rounded-circle" src="{% static 'main/delivered.jpg' %}" alt="Card image">
+      </div>
+    </div>
+  </div>
+
+  <!--Bottom Section-->
+  
+    <div class="row d-flex justify-content-around mt-5 mb-5">
+      <div class="col-md-4 pt-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam, sed voluptatibus reprehenderit nobis itaque. Expedita maxime eius quis sit sequi! Blanditiis aperiam accusamus facilis nisi, veniam numquam repellendus? Architecto?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ullam, sed voluptatibus reprehenderit nobis itaque. Expedita maxime eius quis sit sequi! Blanditiis aperiam accusamus facilis nisi, veniam numquam repellendus? Architecto?</p>
+      </div>
+      <div class="col-md-4 pl-7">
+        <img src="https://placeimg.com/450/300/people" class="rounded" alt="Cinque Terre">
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="section mt-5 p-3 bg-success mb-n2">
+      <div class="row d-flex justify-content-around">
+        <div class="map-responsive col-md-4 pt-3">
+          <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-4">
+          <p><h4 class="text-light">Lorem ipsum dolor</h4></p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In fugit dolores obcaecati vero quae esse quo labore pariatur quia expedita, placeat unde doloribus suscipit delectus id soluta optio sit corrupti.</p>
+          
+        </div>
+        <div class="col-md-4">
+          <form>
+            <p><h4 class="text-light">We Would Love to Hear From You!</h4></p>
+            <div class="form-group">
+              <label for="formGroupExampleInput">First Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Last Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Your Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light text-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

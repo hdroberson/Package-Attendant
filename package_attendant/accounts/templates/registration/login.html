@@ -1,0 +1,31 @@
+{% extends "main/_base.html" %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+
+    <div class="d-flex justify-content-center">
+        <div class="panel mb-5 mt-5">
+            <div id='login_heading' class="panel-heading text-center mb-2">Log in</div>
+            <div class="panel-body">
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-outline-success">Login</button>
+                    <p><a href="{% url 'password_reset' %}">reset password</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Need An Account? <a class='ml-2' href="{% url 'accounts:register' %}">Sign Up Now</a>
+        </small>
+    </div>
+   
+
+{% endblock content %}
